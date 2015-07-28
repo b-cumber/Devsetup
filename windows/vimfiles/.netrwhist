@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='U:'
+let g:netrw_dirhist_2='C:\Windows\system32'
+let g:netrw_dirhist_3='C:/Windows/System32'
+let g:netrw_dirhist_4='U:/vimfiles/ftplugin'
+let g:netrw_dirhist_5='C:/hierarchical_security_policy/openstack'
+let g:netrw_dirhist_6='C:/hierarchical_security_policy'
+let g:netrw_dirhist_7='C:'
+let g:netrw_dirhist_8='C:/hierarchical_security_policy'
+let g:netrw_dirhist_9='C:/hierarchical_security_policy/openstack'
