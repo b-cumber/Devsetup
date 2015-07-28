@@ -12,3 +12,10 @@
 3. Execute the file. 
     
         ./linuxsetup.sh
+4. Remove the setup file.
+
+        rm linuxsetup.sh
+
+5. For Bash changes to take effect re-login or source the .bashrc file.
+
+        source ~/.bashrc
