@@ -1,10 +1,9 @@
 set nocompatible
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax enable
 set background=dark
 colorscheme solarized
 filetype indent plugin on
-
 set wildmenu
 set showcmd
 set backspace=indent,eol,start
@@ -25,31 +24,34 @@ set nuw=4
 set showmode
 set showmatch
 set hlsearch
-set list
-set listchars=tab:>-,trail:·
-
+"set list
+"set listchars=tab:>-,trail:·
 let g:ConqueTerm_Color = 0
 highlight SpecialKey guibg=darkcyan guifg=lightcyan
-"  Always show the status bar, and use a particular format.
+" Always show the status bar, and use a particular format.
 set laststatus=2
 set ruler
 set rulerformat=%40(%=%y%m%r\ L%l/%L\ C%c(%v)\ %p%%\ (%P)%)
-
 " Clear highlighting done by search by pressing \.
 map <silent> \ :let @/=""<cr>
 " Toggle search highlighting.
 map <silent> H :set hls!<cr>
-
 nmap <C-p> m[vab:sleep 350m<CR>`[
 imap <C-p> <Esc>m[vab:sleep 350m<CR>`[a
-
 if has("gui_running")
-    if has("gui_gtk2")
-        set guifont=Inconsolata\ 12
-    elseif has("gui_macvim")
-        set guifont=Menlo\ Regular:h14
-    elseif has("gui_win32")
-        set guifont=Consolas:h11:cANSI
-    endif
+if has("gui_gtk2")
+set guifont=Inconsolata\ 12
+elseif has("gui_macvim")
+set guifont=Menlo\ Regular:h14
+elseif has("gui_win32")
+set guifont=Consolas:h9:cANSI
+endif
 endif
 autocmd BufWritePost *.py call Flake8()
+let g:plantuml_executable_script='java -jar c:\Users\bcumber\plantuml\plantuml.jar'
+nnoremap <F5> :w<CR> :silent make<CR>
+inoremap <F5> <Esc>:w<CR>:silent make<CR>
+vnoremap <F5> :<C-U>:w<CR>:silent make<CR>
+
+nnoremap <tab> <c-w><c-w>
+set nowrap

@@ -9,3 +9,4 @@ mv ~/vimfiles ~/.vim
 rm -r randomstuff-master
 rm master.zip
 echo "Done"
+
