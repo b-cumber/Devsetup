@@ -5,7 +5,7 @@
 
     https://raw.githubusercontent.com/b-cumber/randomstuff/master/linuxsetup.sh
     
-        wget --no-check-certificates https://raw.githubusercontent.com/b-cumber/randomstuff/master/linuxsetup.sh
+        wget --no-check-certificate https://raw.githubusercontent.com/b-cumber/randomstuff/master/linuxsetup.sh
 2. Change User Permissions on the file to make it executable. 
     
         chmod 744 linuxsetup.sh
